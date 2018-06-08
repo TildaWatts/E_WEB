@@ -1,0 +1,57 @@
+.contentFrame {
+
+    dl {
+        width: 100%;
+        // background:orange;
+        height: 46px;
+        font-weight: normal;
+        line-height: 46px;
+        border-bottom: 2px solid #4bae00;
+        overflow: hidden;
+        dt{
+            vertical-align: middle;
+            margin-left: 20px;
+            font-size: 20px;
+            color: #383838;
+        }
+        dd {
+            width: 216px;
+            height: 18px;
+            margin-left: 20px;
+            margin-top: 2px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.con_other {
+    margin-left: 2px;
+    background: #000;
+    li{
+        // position: relative;
+        float: left;
+        width: 235px;
+        height: 320px;
+        border-right: 5px solid #ededed;
+    }
+}
+.con_other2 {
+    li {
+        float: left;
+        width: 482px;
+        height: 420px;
+        background: #000;
+        a{
+            display: block;
+            float: left;
+        }
+    }
+}
+.con_other3 {
+    background: #000;
+    li {
+        float: left;
+        background: #000;
+
+    }
+}

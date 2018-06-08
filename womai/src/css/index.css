@@ -356,6 +356,49 @@ a:hover {
   width: 100%;
   margin-bottom: 0px; }
 
+.contentFrame dl {
+  width: 100%;
+  height: 46px;
+  font-weight: normal;
+  line-height: 46px;
+  border-bottom: 2px solid #4bae00;
+  overflow: hidden; }
+  .contentFrame dl dt {
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #383838; }
+  .contentFrame dl dd {
+    width: 216px;
+    height: 18px;
+    margin-left: 20px;
+    margin-top: 2px;
+    vertical-align: middle; }
+
+.con_other {
+  margin-left: 2px;
+  background: #000; }
+  .con_other li {
+    float: left;
+    width: 235px;
+    height: 320px;
+    border-right: 5px solid #ededed; }
+
+.con_other2 li {
+  float: left;
+  width: 482px;
+  height: 420px;
+  background: #000; }
+  .con_other2 li a {
+    display: block;
+    float: left; }
+
+.con_other3 {
+  background: #000; }
+  .con_other3 li {
+    float: left;
+    background: #000; }
+
 .adv_top a {
   width: 100%;
   height: 100px;
