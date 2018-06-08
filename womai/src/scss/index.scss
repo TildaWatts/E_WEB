@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "global";///引入全局样式
+@import "common";///引入公共样式
+@import "navigation";//引入导航样式
+@import "header";//引入局部文件
+@import "mainnav";//引入主界面导航样式
+@import "banner";
+// @import "footer";//引入局部文件
+// @import "nav";//引入局部文件
+// @import "effect";//引入局部文件
+
+
+
+
+.adv_top a {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: url("http://pic3.womai.com/upload/backend/2018/05/31/18/1527762470957.jpg") no-repeat;
+    background-position-x: center;
+}
+

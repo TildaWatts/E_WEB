@@ -1,0 +1,68 @@
+
+$header_h:86px;
+$fcolor:#606060;
+$fz:12px;
+
+.header {
+    width: 100%;
+    height: $header_h;
+    margin: 35px 0;
+    color: $fcolor;
+    // background: orange;
+    .header_logo {
+        padding-right:8px;
+    }
+}
+.header_content {
+    height: $header_h;
+}
+.header_search {
+    width: 625px;
+    margin: 12px 0 0 48px;
+
+    .search_r {
+        font-size: 14px;
+        width: 28px;
+        line-height: 17px;
+    }
+    .search_b {
+        height: 18px;
+        padding-top: 8px;
+        font-size: $fz;
+        overflow: hidden;
+        a{
+            margin-right: 10px;
+            line-height: 18px;
+        }
+
+    }
+
+}
+.search_m {
+    width: 584px;
+    height: 38px;
+    border: 2px solid #c30000;
+    position: relative;
+    input {
+        padding-left: 32px;
+        width: 450px;
+        height: 34px;
+        // background: #000;
+    }
+    i {
+        background:url('../img/index.png') no-repeat -69px -24px;
+        width: 16px;
+        height: 16px;
+        left: 11px;
+        top: 10px;
+        position: absolute;
+    }
+    button {
+        height: 100%;
+        width: 98px;
+        font-size: 18px "微软雅黑";
+        color: #ffffff;
+        border:none;
+    }
+}
+

@@ -1,0 +1,28 @@
+$global-acolor:#666;
+$global-color:#606060;
+$global-fzsize:12px/150% Arial, Tahoma,"宋体";
+$global-bgc:#ffffff;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: $global-fzsize; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: $global-color; background: $global-bgc; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none; color: $global-acolor; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+
+a:hover {
+    color: #2d8800;
+    text-decoration: underline;
+}
+
+/*! 测试依稀啊*/
+// html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, font, img, small, strong, b, u, i, s, dl, dt, dd, ol, ul, li, fieldset, form, label

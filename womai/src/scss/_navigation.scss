@@ -1,0 +1,104 @@
+$nav_h:32px;
+$nav_fz:13px;
+
+//整体导航栏
+.site_nav {
+    width: 100%;
+    height: $nav_h;
+    background: #f5f5f5; 
+
+}
+
+//向下小箭头
+.arrow{
+    display: inline-block;
+    margin-left: 5px;
+    width: 5px;
+    height: 5px;
+    background: url(../img/index.png) no-repeat -92px 0;
+}
+
+// 左边城市
+.site_city {
+    height: 100%;
+    margin-left: 32px;
+    padding-right: 17px;
+    background: url(../img/index.png) no-repeat -101px 0;
+    float: left;
+    font-size: $nav_fz;
+    text-align: center;
+    span {
+        display: inline-block;
+        line-height: $nav_h;
+        padding-left: 15px;
+    }
+    a {
+        display: inline-block;
+        width: 60px;
+        height: 100%;
+        line-height: $nav_h;
+        text-align: center;
+        // .arrow
+    }
+}
+
+//登录注册
+.site_enter {
+    float: left;
+    font-size: $nav_fz;
+    line-height: $nav_h;
+    height: 100%;
+    text-align: center;
+    span {
+        display: inline-block;
+        height: 100%;
+        padding-right: 9px;
+    }
+    a:nth-of-type(1){
+        margin-right: 20px;
+    }
+}
+.site_rightnav {
+    float: right;
+    // width: 100px;
+    height: 100%;
+    margin-right: 34px;
+    li {
+        float: left;
+        height: $nav_h;
+        line-height: $nav_h;
+        font-size: $nav_fz;
+    }
+    li a {
+        display: block;
+        padding: 0 10px;
+        line-height: $nav_h;
+    }
+    li:nth-last-of-type(2) i{
+        width: 43px;
+        height: 15px;
+        margin-bottom: 2px;
+        vertical-align: middle;
+        line-height: $nav_h;
+        display: inline-block;
+        background:url('../img//index.png') no-repeat;
+    }
+
+    li:nth-last-of-type(1) i{
+        width: 43px;
+        height: 15px;
+        vertical-align: middle;
+        margin-bottom: 2px;
+        line-height: $nav_h;
+        display: inline-block;
+        background:url('../img//index.png') no-repeat 0 -18px;
+    }
+
+    //分隔线
+    .nav_line {
+        background: #e3dde3;
+        width: 1px;
+        margin:10px 0 -10px 0;
+        height: 12px;
+    }
+}
