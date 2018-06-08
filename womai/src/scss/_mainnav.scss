@@ -31,11 +31,12 @@ $navH:48px;
 }
 .allkinds {
     background: $themeGreen;
-    width: 210px;
+    width: 206px;
     height: 500px;
     position: absolute;
-    left: 0;
+    left: -1px;
     top: 0;
+    z-index: 999;
     h3 {
         color:white;
         width: 100%;

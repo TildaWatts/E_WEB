@@ -224,11 +224,12 @@ a:hover {
 
 .allkinds {
   background: #2d8800;
-  width: 210px;
+  width: 206px;
   height: 500px;
   position: absolute;
-  left: 0;
-  top: 0; }
+  left: -1px;
+  top: 0;
+  z-index: 999; }
   .allkinds h3 {
     color: white;
     width: 100%;
@@ -290,21 +291,24 @@ a:hover {
       background: url("../img/index.png") no-repeat 0 -40px; }
 
 .banner {
-  width: 100%; }
+  position: relative; }
   .banner .banner_con {
     height: 450px;
     width: 100%;
     background: url("../img/selfrollbk-0606.png") no-repeat center; }
 
 .banner_mid {
-  position: relative;
-  float: left;
-  width: 790px;
+  width: 800px;
   height: 450px;
-  margin-left: 280px;
+  position: relative;
+  background: red;
+  margin: 0 auto;
   overflow: hidden; }
   .banner_mid ul li {
-    position: absolute; }
+    position: absolute;
+    height: 450px; }
+    .banner_mid ul li img {
+      width: 100%; }
   .banner_mid ol {
     position: absolute;
     bottom: 10px;
@@ -318,11 +322,39 @@ a:hover {
     .banner_mid ol .active {
       background: url("../img/b_icon.png") no-repeat -21px 0; }
 
-.banner_tool {
-  width: 210px;
+.banner_right {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 205px;
   height: 450px;
-  background: skyblue;
-  float: left; }
+  background: white;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+
+.br_tab {
+  width: 205px;
+  height: 120px;
+  background: skyblue; }
+
+.br_tool a {
+  display: block;
+  height: 60px;
+  width: 67.33333px;
+  background: white;
+  float: left;
+  border-right: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd; }
+
+.br_tool .atool-3, .br_tool .atool-6, .br_tool .atool-9 {
+  border-right: none; }
+
+.br_tool .atool-7, .br_tool .atool-8, .br_tool .atool-9 {
+  border-bottom: none; }
+
+.br_ad {
+  width: 100%;
+  margin-bottom: 0px; }
 
 .adv_top a {
   width: 100%;

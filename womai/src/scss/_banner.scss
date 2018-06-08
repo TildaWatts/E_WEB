@@ -1,7 +1,7 @@
 
 
 .banner {
-    width: 100%;
+    position: relative;
     .banner_con {
         height: 450px;
         width: 100%;
@@ -10,14 +10,19 @@
 }
 
 .banner_mid {
-    position: relative;
-    float: left;
-    width: 790px;
+    width: 800px;
     height: 450px;
-    margin-left: 280px;
+    position: relative;
+    background: red;
+    margin: 0 auto;
     overflow: hidden;
     ul li{
         position: absolute;
+        height: 450px;
+
+        img{
+            width: 100%;
+        }
     }
     ol {
         position: absolute; 
@@ -35,9 +40,57 @@
         }
     }
 }
-.banner_tool {
-    width: 210px;
+.banner_right {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    width: 205px;
     height: 450px;
-    background: skyblue;
-    float: left;
+    background:white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
+.br_tab {
+    width: 205px;
+    height: 120px;
+    background: skyblue;
+}
+
+$toolW :202px;
+$tool:".atool";
+.br_tool {
+    a{
+        display: block;
+        height: 60px;
+        width: $toolW/3;
+        background: white;
+        float: left;
+        border-right: 1px dashed #ddd;
+        border-bottom: 1px dashed #ddd;
+    }
+    .atool-3,.atool-6,.atool-9 {
+        border-right: none;
+    }
+    .atool-7,.atool-8,.atool-9 {
+        border-bottom: none;
+    }
+}
+.br_ad {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+
+
+// @for $i from 1 through 9 {
+//     @if #{$i} == 3 {   
+//         .atool-#{$i}{
+//         border-right: 1px dashed green;
+//         }
+//     }
+// }
+    // @if(#{$i} < 6){
+    //     a:nth-of-type(#{$i}) {
+    //         border-bottom: 1px dashed #ddd;
+    //     }
