@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*!------------------------------------公共样式-----------------------------------------*/
+.wrap {
+  width: 1210px;
+  margin: 0 auto; }
+
+.wrapRL {
+  width: 1000px;
+  margin: 0 auto; }
+
+.themeGreen {
+  background-color: #2d8800; }
+
+.themeRed {
+  background-color: #c30000; }
+
+.header {
+  border-bottom: 2px solid #2d8800; }
+
+.logo {
+  display: inline-block;
+  padding-left: 10px; }
+
+.bgsize, .bg0, .bg {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px; }
+
+.bg {
+  background: url("https://passport.womai.com/upload/2018/6/8/20180608100544784.jpg") no-repeat; }
+
+.login_cont {
+  float: right;
+  margin-top: 30px;
+  margin-right: 34px; }
+
+.login_inside {
+  width: 306px;
+  padding: 10px 33px;
+  border: 1px solid #fff;
+  background-color: #f7f8f8;
+  margin: 3px auto;
+  height: 436px;
+  border: 1px solid #dcdddd; }
+  .login_inside span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #595757;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei"; }
+  .login_inside input {
+    width: 100%;
+    height: 28px; }
+  .login_inside .submitBtn {
+    width: 209px;
+    height: 30px;
+    float: left;
+    color: #fff;
+    background: url(../img/login.png) 0px -5px no-repeat;
+    border: none;
+    cursor: pointer; }
+  .login_inside a {
+    display: block;
+    width: 79px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 16px;
+    background: url(../img/login.png) no-repeat -89px -149px;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    color: #479202; }

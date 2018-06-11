@@ -1,5 +1,25 @@
 
-
 .header {
     border-bottom: 2px solid #2d8800;
 }
+
+.logo{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.bgsize {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+.bg0 {
+    @extend .bgsize;
+}
+
+.bg {
+    @extend .bgsize;
+    background:url('https://passport.womai.com/upload/2018/6/8/20180608100544784.jpg') no-repeat;
+}
+
