@@ -380,13 +380,54 @@ a:hover {
     vertical-align: middle; }
 
 .con_other {
-  margin-left: 2px;
-  background: #000; }
+  margin-left: 2px; }
   .con_other li {
     float: left;
     width: 235px;
     height: 320px;
     border-right: 5px solid #ededed; }
+    .con_other li a:nth-of-type(1) {
+      display: block;
+      width: 215px;
+      height: 220px;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .con_other li a:nth-of-type(1) img {
+        width: 100%; }
+    .con_other li a:nth-of-type(2) {
+      height: 30px;
+      font-size: 16px;
+      color: #383838;
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 20px;
+      white-space: nowrap;
+      overflow: hidden; }
+    .con_other li span {
+      display: block;
+      font-size: 14px;
+      line-height: 22px;
+      color: #383838;
+      text-align: left;
+      margin-left: 10px; }
+    .con_other li i {
+      line-height: 25px;
+      font-size: 20px;
+      color: #de0801;
+      margin-left: 10px; }
+    .con_other li a:nth-of-type(3) {
+      float: right;
+      width: 80px;
+      height: 26px;
+      margin-top: 2px;
+      line-height: 26px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      background: #fc7210;
+      margin-right: 10px; }
 
 .con_other2 li {
   float: left;

@@ -21,7 +21,7 @@
 
     //商品表1
     $sql1 = "select * from productInfo";
-    $result1 = $conn->query($sql);
+    $result1 = $conn->query($sql1);
 
     $p1arr = array();
     if ($result1->num_rows > 0) {
@@ -37,7 +37,7 @@
 
     //商品表2
     $sql2 = "select * from dailyproduct";
-    $result2 = $conn->query($sql);
+    $result2 = $conn->query($sql2);
 
     $p2arr = array();
     if ($result2->num_rows > 0) {
@@ -53,7 +53,7 @@
 
     //商品表3
     $sql3 = "select * from dailyproduct1";
-    $result3 = $conn->query($sql);
+    $result3 = $conn->query($sql3);
 
     $p3arr = array();
     if ($result3->num_rows > 0) {

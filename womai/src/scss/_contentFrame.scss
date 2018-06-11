@@ -26,13 +26,60 @@
 
 .con_other {
     margin-left: 2px;
-    background: #000;
     li{
         // position: relative;
         float: left;
         width: 235px;
         height: 320px;
         border-right: 5px solid #ededed;
+        a:nth-of-type(1) {
+            display: block;
+            width: 215px;
+            height: 220px;
+            margin-left: 10px;
+            margin-right: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        a:nth-of-type(2){
+            height: 30px;
+            font-size: 16px;
+            color: #383838;
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        span {
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+            color: #383838;
+            text-align: left;
+            margin-left: 10px;
+        }
+        i {
+            line-height: 25px;
+            font-size: 20px;
+            color: #de0801;
+            margin-left: 10px
+        }
+        a:nth-of-type(3){
+            float: right;
+            width: 80px;
+            height: 26px;
+            margin-top: 2px;
+            line-height: 26px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            background: rgb(252,114,16);
+            margin-right: 10px;
+        }
     }
 }
 .con_other2 {
