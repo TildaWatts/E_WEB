@@ -39,7 +39,7 @@
         border: none;
         cursor: pointer;
     }
-    a {
+    .res {
         display: block;
         width: 79px;
         height: 30px;
@@ -54,8 +54,71 @@
         color: #479202;
     }
 }
-// .sp {
-    // line-height: 22px;
-    // height: 22px;
-    // margin-top: 2px;
-// }
+.sp {
+    line-height: 22px;
+    height: 22px;
+    margin-top: 2px;
+    a {
+        display: block;
+        float: right;
+        color: lightgray;
+        font-size: 12px;
+    }
+}
+
+.spp{
+    height: 32px;
+}
+.thridlogin {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px dashed #aaaaaa;
+
+    width: 100%;
+    p {
+        height: 16px;
+        line-height: 16px;
+        color: #595757;
+        font-size: 12px;
+    }
+    ul {
+        width: 100%;
+        height: 100px;
+        li {
+            
+            height: 20px;
+            line-height: 20px;
+            float: left;
+            padding: 0px 16px 0px 0px;
+            margin: 10px 10px 0px 0px;
+            display: block;
+            border-right: #dcdddd 1px solid;          
+            i {
+                width: 16px;
+                height: 20px;
+                display: inline-block;
+                background: url(../img/login.png) no-repeat;
+            }
+            a{
+                display: inline-block;
+                height: 20px;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                margin-left:4px;
+                float: right;
+            }
+        }
+        //注意是在li中的，不是一起的，不能嵌套写
+        @for $i from 1 through 4 {
+            li:nth-of-type(#{$i})  i{
+                background-position: -209px -55px - 20*$i;
+            }
+        }
+        @for $i from 5 through 9 {
+            li:nth-of-type(#{$i})  i{
+                background-position: -209px -159px - 20*($i - 5);
+            }
+        }
+    }
+}
