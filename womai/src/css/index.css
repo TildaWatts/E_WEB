@@ -499,7 +499,6 @@ a:hover {
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-    background: url(../images/floor_icon.png) no-repeat;
     cursor: pointer; }
   .con ul {
     width: 205px;
@@ -518,13 +517,15 @@ a:hover {
         line-height: 36px;
         background: url("http://pic1.womai.com/upload/backend/2018/04/23/11/1524453150204.png") no-repeat; }
       .con ul li a {
-        display: inline-block;
+        display: block;
         width: 56px;
         height: 22px;
         line-height: 20px;
         margin-left: 5px;
+        margin-right: 10px;
         font-size: 14px;
-        text-align: center; }
+        text-align: center;
+        float: right; }
 
 .adv_top a {
   width: 100%;
