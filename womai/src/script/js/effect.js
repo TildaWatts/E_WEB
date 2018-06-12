@@ -13,7 +13,7 @@ define(['jquery'],function($){
         //     });
         // })(),
         lunbo:(function(){
-            var $baidu = $('.banner_mid');
+            var $lunboDiv = $('.banner_mid');
             var $picli = $('.banner_mid ul li');
             var $btnli = $('.banner_mid ol li');
             var $left = $('#left');
@@ -31,11 +31,11 @@ define(['jquery'],function($){
                 $piclilength = $picli.size();
             });
 
-            $baidu.on('mouseover',function(){
+            $lunboDiv.on('mouseover',function(){
                 $left.show();
                 $right.show();
             });
-            $baidu.on('mouseout',function(){
+            $lunboDiv.on('mouseout',function(){
                 $left.hide();
                 $right.hide();
             });
@@ -73,7 +73,7 @@ define(['jquery'],function($){
                 $right.click();
             }, 2000);
         
-            $baidu.hover(function() {
+            $lunboDiv.hover(function() {
                 clearInterval(timer);
             }, function() {
                 timer = setInterval(function() {

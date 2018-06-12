@@ -211,7 +211,7 @@ a:hover {
 .main_nav_wrap {
   height: 100%;
   position: relative; }
-  .main_nav_wrap ul {
+  .main_nav_wrap .navul {
     width: 760px;
     height: 46px;
     padding-left: 246px; }
@@ -241,6 +241,55 @@ a:hover {
     line-height: 48px;
     text-align: center;
     background: #267802; }
+
+.secnav {
+  padding-top: 12px;
+  height: 438px;
+  background: #348d2c; }
+  .secnav li {
+    width: 206px;
+    height: 32px;
+    margin-top: 6px; }
+    .secnav li i {
+      display: block;
+      float: left;
+      width: 18px;
+      height: 18px;
+      margin: 6px 0 0 16px;
+      background: url(../img/2levelicon.png) no-repeat; }
+    .secnav li a {
+      display: inline-block;
+      line-height: 32px;
+      font-size: 14px;
+      color: white;
+      text-align: right;
+      margin-right: -15px; }
+  .secnav li:hover {
+    background: white; }
+    .secnav li:hover i {
+      background: url(../img/2levelicon.png) no-repeat -17px 0; }
+    .secnav li:hover a {
+      color: #348d2c; }
+  .secnav .allnav {
+    position: absolute;
+    width: 788px;
+    height: 450px;
+    left: 206px;
+    top: 50px;
+    background: white;
+    display: none; }
+  .secnav li:hover .allnav {
+    display: block; }
+  .secnav .allnav ul {
+    margin-left: 50px;
+    margin-top: 20px; }
+    .secnav .allnav ul li {
+      float: left;
+      width: 78px; }
+      .secnav .allnav ul li a {
+        color: #000;
+        font-size: 12px;
+        line-height: 20px; }
 
 .cart_r {
   border: 1px solid #2d8800;

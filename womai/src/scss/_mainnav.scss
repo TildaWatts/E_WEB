@@ -10,7 +10,7 @@ $navH:48px;
 .main_nav_wrap {
     height: 100%;
     position: relative;
-    ul {
+    .navul {
         width: 760px;
         height: $navH - 2;
         padding-left: 246px;
@@ -46,6 +46,69 @@ $navH:48px;
         background:rgb(38,120,2);
     }
 }
+.secnav {
+    padding-top: 12px;
+    height: 438px;
+    background: rgb(52,141,44);
+    li {
+        width: 206px;
+        height: 32px;
+        margin-top: 6px;
+        // background: orange;
+        i {
+            display: block;
+            float: left;
+            width: 18px;
+            height: 18px;
+            margin: 6px 0 0 16px;
+            background: url(../img/2levelicon.png) no-repeat;
+        }
+        a{
+            display: inline-block;
+            line-height: 32px;
+            font-size: 14px;
+            color: white;
+            text-align: right;
+            margin-right: -15px;
+        }
+    }
+    li:hover{
+        background: white;
+        i{
+            background: url(../img/2levelicon.png) no-repeat -17px 0; 
+        }
+        a{
+            color: rgb(52,141,44);
+        }
+    }
+    .allnav{
+        position: absolute;
+        width: 788px;
+        height: 450px;
+        left: 206px;
+        top: 50px;
+        background: white;
+        display: none;
+    }
+    li:hover .allnav{
+        display: block;
+    }
+    .allnav ul {
+        margin-left: 50px;
+        margin-top: 20px;
+        li {
+            float: left;
+            width: 78px;
+            a {
+                color: #000;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
 .cart_r {
     border: 1px solid $themeGreen;
     width: 202px;
