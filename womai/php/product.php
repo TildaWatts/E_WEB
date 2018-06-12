@@ -67,6 +67,38 @@
         }
     }
 
+        //商品表4
+        $sql4 = "select * from dailyproduct2";
+        $result4 = $conn->query($sql4);
+    
+        $p4arr = array();
+        if ($result4->num_rows > 0) {
+            // 输出数据
+            while($row = $result4->fetch_assoc()) {
+                $count=count($row);
+                for($i=0;$i<$count;$i++){  
+                    unset($row[$i]);//删除冗余数据  
+                }
+                array_push($p4arr,$row);
+            }
+        }
+        //floor表1
+        $sql5 = "select * from dailyproduct2";
+        $result5 = $conn->query($sql5);
+    
+        $p5arr = array();
+        if ($result5->num_rows > 0) {
+            // 输出数据
+            while($row = $result5->fetch_assoc()) {
+                $count=count($row);
+                for($i=0;$i<$count;$i++){  
+                    unset($row[$i]);//删除冗余数据  
+                }
+                array_push($p5arr,$row);
+            }
+        }
+
+
     //首页接口
     class indexData{
 
@@ -76,6 +108,9 @@
     $index->proList1 = $p1arr;
     $index->proList2 = $p2arr;
     $index->proList3 = $p3arr;
+    $index->proList4 = $p4arr;
+    $index->floList1 = $p5arr;
+
 
     $str=json_encode($index);
     echo $str;

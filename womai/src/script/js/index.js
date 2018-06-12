@@ -7,6 +7,8 @@ define(['jquery'],function($){
 	var $plist1Ul = $('.con_other');
 	var $plist2li = $('.con_other2 li');
 	var $plist3Ul = $('.con_other3');
+	var $adListUl = $('.contentMain4 ul');
+	
 	$.ajax({
 		url: "../../php/product.php",
 		dataType:'json'//加这句可以json转对象
@@ -35,10 +37,18 @@ define(['jquery'],function($){
 
 			//商品列表3
 			$.each(indexData.proList3,function(index,val){
-				$plist3Ul.append('<li><a><img src="'+val.pUrl +'"> </a></li>');
+				$plist3Ul.append('<li><a href="javascript:;"><img src="'+val.pUrl +'"> </a></li>');
 			});
 
+			//商品列表4
+			$.each(indexData.proList4,function(index,val){
+				$adListUl.append('<li><a href="javascript:;"><img src="'+val.adurl +'"> </a></li>');
+			});
 
+			//floor列表1
+			// $.each(indexData.floList1,function(index,val){
+			// 	$plist3Ul.append('<li><a href="javascript:;"><img src="'+val.pUrl +'"> </a></li>');
+			// });
 		})
 		.fail(function(){
 			console.log("error");

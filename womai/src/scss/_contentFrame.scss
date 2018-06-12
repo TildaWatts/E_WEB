@@ -97,12 +97,33 @@
 }
 .con_other3 {
     background: #000;
+    height: 320px;
+    width: 1210px;
     li {
-        float: left;
         background: #000;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        height: 320px;
+        background: red;
+        a {
+          position: absolute;
+          left: -10px;
+          top: 0; 
+        }
 
     }
+    //for循环嵌套if语句有些问题
+    li:nth-of-type(1){
+        width: 484px;
+    }
+    @for $i from 2 through 4 {
+        li:nth-of-type(#{$i}){
+            width:242px;
+        }
+    }
 }
+
 
 .contentMain4 {
     background: skyblue;
