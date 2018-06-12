@@ -18,7 +18,7 @@ define(['jquery'],function($){
 
 			//轮播列表
 			$.each(indexData.lunbo,function(index,val){
-				$lunboUl.append('<li><a><img src="'+val.imgurl +'"> </a></li>');
+				$lunboUl.append('<li rgb="'+val.bgcolor+'"><a><img src="'+val.imgurl +'"> </a></li>');
 			});
 
 			//商品列表1

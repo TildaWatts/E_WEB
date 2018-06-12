@@ -24,4 +24,4 @@ require.config({
 /*require(['js/module1.js']);
 require(['js/module2.js']);
 require(['js/module3.js']);*/
-require(['../script/js/index.js']);//异步加载
+require(['../script/js/index.js','../script/js/effect.js']);//异步加载

@@ -295,7 +295,8 @@ a:hover {
       background: url("../img/index.png") no-repeat 0 -40px; }
 
 .banner {
-  position: relative; }
+  position: relative;
+  background: #3f2e24; }
   .banner .banner_con {
     height: 450px;
     width: 100%;
@@ -305,14 +306,16 @@ a:hover {
   width: 800px;
   height: 450px;
   position: relative;
-  background: red;
   margin: 0 auto;
   overflow: hidden; }
   .banner_mid ul li {
     position: absolute;
-    height: 450px; }
+    height: 450px;
+    display: none; }
     .banner_mid ul li img {
       width: 100%; }
+  .banner_mid ul li:nth-of-type(1) {
+    display: block; }
   .banner_mid ol {
     position: absolute;
     bottom: 10px;
@@ -359,6 +362,29 @@ a:hover {
 .br_ad {
   width: 100%;
   margin-bottom: 0px; }
+
+#left, #right {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  display: block;
+  width: 28px;
+  height: 62px;
+  font: 400 22px/62px simsun;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  pointer-events: auto;
+  display: none; }
+
+#left {
+  float: left;
+  left: 0; }
+
+#right {
+  right: 0;
+  float: right; }
 
 .contentFrame dl {
   width: 100%;

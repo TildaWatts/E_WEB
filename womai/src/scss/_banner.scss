@@ -2,10 +2,12 @@
 
 .banner {
     position: relative;
+    background: rgb(63, 46, 36);
     .banner_con {
         height: 450px;
         width: 100%;
         background: url('../img/selfrollbk-0606.png') no-repeat center ;
+        
     }
 }
 
@@ -13,16 +15,19 @@
     width: 800px;
     height: 450px;
     position: relative;
-    background: red;
     margin: 0 auto;
     overflow: hidden;
     ul li{
         position: absolute;
         height: 450px;
-
+        display: none;
         img{
             width: 100%;
         }
+    }
+    ul li:nth-of-type(1){
+        display: block;
+
     }
     ol {
         position: absolute; 
@@ -79,7 +84,30 @@ $tool:".atool";
     width: 100%;
     margin-bottom: 0px;
 }
+#left,#right{
 
+    position: absolute;
+    top:50%;
+    margin-top: -30px;
+    display: block;
+    width: 28px;
+    height: 62px;
+    font: 400 22px/62px simsun;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    text-decoration: none;
+    pointer-events: auto;
+    display: none;
+}
+#left{
+    float: left;
+    left: 0;
+}
+#right{
+    right: 0;
+    float: right;
+}
 
 
 
