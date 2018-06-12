@@ -8,7 +8,8 @@ define(['jquery'],function($){
 	var $plist2li = $('.con_other2 li');
 	var $plist3Ul = $('.con_other3');
 	var $adListUl = $('.contentMain4 ul');
-	
+	var $floorUl = $('.frfoot ul');  
+
 	$.ajax({
 		url: "../../php/product.php",
 		dataType:'json'//加这句可以json转对象
@@ -46,9 +47,16 @@ define(['jquery'],function($){
 			});
 
 			//floor列表1
-			// $.each(indexData.floList1,function(index,val){
-			// 	$plist3Ul.append('<li><a href="javascript:;"><img src="'+val.pUrl +'"> </a></li>');
-			// });
+			$.each(indexData.floList1,function(index,val){
+				
+				if(val.fname == 'none'){
+					$floorUl.append('<li><a href=""><img src="'+ val.furl+'" alt=""></li>');
+				}else{
+					$floorUl.append('<li><a href=""><img src="'+ val.furl+'" alt=""></a><a href="">'+val.fname+'</a><span>'+val.fprice+'</span></li>');
+				}
+			});
+
+			
 		})
 		.fail(function(){
 			console.log("error");

@@ -83,7 +83,7 @@
             }
         }
         //floor表1
-        $sql5 = "select * from dailyproduct2";
+        $sql5 = "select * from floor0List";
         $result5 = $conn->query($sql5);
     
         $p5arr = array();
