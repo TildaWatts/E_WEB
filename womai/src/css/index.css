@@ -663,6 +663,50 @@ a:hover {
         width: 100%;
         height: 100%; }
 
+#loutinav {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  border: 1px solid #ddd;
+  display: block;
+  z-index: 9999; }
+
+#loutinav ul li {
+  width: 75px;
+  height: 37px;
+  border-bottom: 1px dotted #DDDDDD;
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  color: black; }
+
+#loutinav ul li span {
+  display: block;
+  width: 75px;
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#loutinav ul li.last {
+  color: #fff;
+  line-height: 37px;
+  border-bottom: 1px solid #ddd; }
+
+#loutinav ul li.active span {
+  background: #2d8800;
+  color: #fff;
+  display: block; }
+
+#loutinav ul li:hover span {
+  background: #2d8800;
+  color: #fff;
+  display: block; }
+
 .adv_top a {
   width: 100%;
   height: 100px;

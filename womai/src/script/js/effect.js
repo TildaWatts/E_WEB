@@ -80,7 +80,52 @@ define(['jquery'],function($){
                     $right.click();
                 }, 2000);
             });
-        })()
+        })(),
 
+        louti:(function(){
+            var $diantiNav = $('#loutinav');
+            var $dianti = $('#loutinav ul li').not('.last');
+            var $floor = $('.louti');
+            var $goback = $('.last');
+        $(window).on('scroll',function(){
+        
+            var $scrollTop = $(this).scrollTop();  
+            console.log($scrollTop);
+            if($scrollTop>800){
+                // $diantiNav.css('display','block')
+                $diantiNav.show();
+            }else{
+                // $diantiNav.css('display','none')
+                $diantiNav.hide();
+            }
+
+            $floor.each(function(index,element){
+                var $top=$(this).offset().top+400;
+
+                if($top>$scrollTop){
+                    $dianti.removeClass('active');
+                    $dianti.eq($(this).index()).addClass('active');
+
+                    return false;
+                }
+            });
+        });
+
+        $dianti.on('click',function () {
+            $(this).addClass('active').siblings('#loutinav ul li').removeClass('active');
+            var $top = $floor.eq($(this).index()).offset().top;
+
+            $('html,body').animate({
+                scrollTop:$top
+            });
+        });
+
+        $goback.on('click',function () {
+            $('html,body').animate({
+                scrollTop:0
+            });
+        });
+            })()
+//-----------
     }
 });
