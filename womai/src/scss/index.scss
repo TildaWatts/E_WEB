@@ -11,8 +11,35 @@
 // @import "nav";//引入局部文件
 // @import "effect";//引入局部文件
 
+.br_tab a {
+    display: inline-block;
+    width: 63px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+}
 
+.br_tab div {
+    width: 100%;
+    height: 85px;
+    font-size: 12px;
+    display: none;
+    ul{
+        width: 166px;
+        height: 77px;
+        margin: 10px auto;
+        li{
+            list-style-type: disc;
+            margin-left: 15px;
+        }
+    }
+}
 
+.br_tab .active {
+    border-bottom: 2px solid #2d8800;
+}
 
 .adv_top a {
     width: 100%;

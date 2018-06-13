@@ -5,13 +5,13 @@ define(['jquery'],function($){
     return {
 
         //tab效果
-        // tab: (function() {
-        //     var $divs = $('#tab div');
-        //     $('#tab button').click(function() {
-        //         $(this).addClass('active').siblings('button').removeClass('active');
-        //         $divs.eq($(this).index()).show().siblings('#tab div').hide();
-        //     });
-        // })(),
+        tab: (function() {
+            var $divs = $('.br_tab div');
+            $('.br_tab a').mouseover(function() {
+                $(this).addClass('active').siblings('a').removeClass('active');
+                $divs.eq($(this).index()).show().siblings('.br_tab div').hide();
+            });
+        })(),
         lunbo:(function(){
             var $lunboDiv = $('.banner_mid');
             var $picli = $('.banner_mid ul li');

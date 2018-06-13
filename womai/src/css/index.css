@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
-strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea, input {
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea, input, button {
   margin: 0;
   padding: 0; }
 
@@ -390,8 +390,7 @@ a:hover {
 
 .br_tab {
   width: 205px;
-  height: 120px;
-  background: skyblue; }
+  height: 120px; }
 
 .br_tool a {
   display: block;
@@ -706,6 +705,31 @@ a:hover {
   background: #2d8800;
   color: #fff;
   display: block; }
+
+.br_tab a {
+  display: inline-block;
+  width: 63px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none; }
+
+.br_tab div {
+  width: 100%;
+  height: 85px;
+  font-size: 12px;
+  display: none; }
+  .br_tab div ul {
+    width: 166px;
+    height: 77px;
+    margin: 10px auto; }
+    .br_tab div ul li {
+      list-style-type: disc;
+      margin-left: 15px; }
+
+.br_tab .active {
+  border-bottom: 2px solid #2d8800; }
 
 .adv_top a {
   width: 100%;

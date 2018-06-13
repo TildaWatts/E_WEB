@@ -55,7 +55,6 @@ define(['jquery'],function($){
 					$floorUl.append('<li><a href=""><img src="'+ val.furl+'" alt=""></a><a href="">'+val.fname+'</a><span>'+val.fprice+'</span></li>');
 				}
 			});
-
 			
 		})
 		.fail(function(){
