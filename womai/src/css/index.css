@@ -203,6 +203,22 @@ a:hover {
     color: #ffffff;
     border: none; }
 
+.xuanfuseach {
+  position: absolute;
+  left: 10;
+  top: 10;
+  width: 100%;
+  height: 92px;
+  background: white;
+  box-shadow: 0 1px 20px #888888;
+  display: none;
+  z-index: 999999; }
+  .xuanfuseach .header_adv {
+    width: 110px;
+    height: 80px; }
+  .xuanfuseach .header_search {
+    margin-top: 25px; }
+
 .main_nav {
   width: 100%;
   height: 48px;
@@ -668,7 +684,8 @@ a:hover {
   left: 0;
   border: 1px solid #ddd;
   display: block;
-  z-index: 9999; }
+  z-index: 8888;
+  display: none; }
 
 #loutinav ul li {
   width: 75px;
@@ -717,9 +734,10 @@ a:hover {
 
 .br_tab div {
   width: 100%;
-  height: 85px;
+  height: 76px;
   font-size: 12px;
-  display: none; }
+  display: none;
+  border-bottom: 1px dashed #d5d5d5; }
   .br_tab div ul {
     width: 166px;
     height: 77px;

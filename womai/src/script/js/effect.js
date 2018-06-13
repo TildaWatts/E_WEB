@@ -4,6 +4,28 @@ define(['jquery'],function($){
 
     return {
 
+        fixedSeach:(function () {
+            var $xuanfubg = $('.xuanfuseach');
+            $(window).on('scroll',function(){
+                
+                var $scrollTop = $(this).scrollTop(); 
+                console.log(); 
+                if($scrollTop>800){
+                    $xuanfubg.show(200).offset({top:$scrollTop}); 
+                    // $xuanfubg.show();
+                    // $xuannfubg.animate({
+                    //     top: $scrollTop
+                    // }).show();
+                }else{
+                    $xuanfubg.hide(200).offset({top:0}); 
+                    // $xuanfubg.hide();
+                    // $xuannfubg.animate({
+                    //     top: 0
+                    // }).hide();
+                }
+            });
+          })(),
+
         //tab效果
         tab: (function() {
             var $divs = $('.br_tab div');

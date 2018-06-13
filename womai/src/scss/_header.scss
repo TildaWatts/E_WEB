@@ -66,3 +66,21 @@ $fz:12px;
     }
 }
 
+.xuanfuseach {
+    position: absolute;
+    left: 10;
+    top:10;
+    width: 100%;
+    height: 92px;
+    background:white;
+    box-shadow: 0 1px 20px #888888;
+    display: none;
+    z-index: 999999;
+    .header_adv {
+        width: 110px;
+        height: 80px;
+    }
+    .header_search {
+        margin-top: 25px;
+    }
+}
