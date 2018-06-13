@@ -90,22 +90,20 @@ define(['jquery'],function($){
         $(window).on('scroll',function(){
         
             var $scrollTop = $(this).scrollTop();  
-            console.log($scrollTop);
             if($scrollTop>800){
-                // $diantiNav.css('display','block')
                 $diantiNav.show();
             }else{
-                // $diantiNav.css('display','none')
                 $diantiNav.hide();
             }
-
+            
             $floor.each(function(index,element){
                 var $top=$(this).offset().top+400;
 
                 if($top>$scrollTop){
                     $dianti.removeClass('active');
-                    $dianti.eq($(this).index()).addClass('active');
-
+                    //不能直接用index
+                    $dianti.eq($('.louti').index(this)).addClass('active');
+                    // console.log($('.louti').index(this)+1);
                     return false;
                 }
             });
