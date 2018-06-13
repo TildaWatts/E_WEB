@@ -3,20 +3,24 @@
 require "conn.php";//引入数据库连接
 
 //检测用户名是否存在
-if (isset($_POST['username']) || isset($_POST['submit']) || isset($_POST['phoneNumber'])) {
+if (isset($_POST['username']) || isset($_POST['submit']) || isset($_POST['phoneNumber'] )|| isset($_POST['email'])) {
     $username = @$_POST['username'];
     $phoneNumber = @$_POST['phoneNumber'];
+    $email = @$_POST['email'];
 }else{
     exit('非法操作');
 }
 
+
 //查询字段
-$sql = "select * from userinfo where username = '$username' or phoneNumber = '$phoneNumber' ";
+$sql = "select * from userinfo where username = '$username' or phoneNumber = '$phoneNumber' or email = '$email' ";
 $result = $conn->query($sql);
 if ($result->fetch_assoc()) {
-    echo true;
+    // echo true;
+    exit( "false" ); //用户名已存在
 } else {
-    echo false;
+    // echo false;
+    exit( "true" ); //用户名不存在，验证通过，输出“true”，并结束程序
 }
 
 //点击submit注册按钮
@@ -31,7 +35,7 @@ if (isset($_POST['submit'])) {
        
 
         $uid = mysqli_insert_id($conn);
-            echo $uid;
+            echo 'success';
         // header('location:../html/login.html');
         $conn->query($query);
         // mysqli_query($conn,$query);

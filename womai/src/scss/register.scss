@@ -1,4 +1,102 @@
 @import "common";
+@import "global";
 @import "rLHeader";
 
 
+.header{
+
+    span{
+        display: block;
+        float: left;
+        margin: 20px;
+        font-size: 20px;
+        line-height: 36px;
+        color: #333333;
+        font-family: "Microsoft YaHei" ! important;
+    }
+    .header_r {
+        margin: 20px;
+        line-height: 36px;
+        color: #999999;
+        a{
+        color: #333333;
+        }
+    }
+
+}
+
+
+.bg_r {
+    width: 302px;
+    height: 467px;
+    margin-right: 40px;
+    margin-top: 10px;
+    // background: skyblue;
+    float: right;
+}
+.res_inside {
+    width: 285px;
+    padding-top: 15px;
+    background-color: #f7f8f8;
+    margin: 3px auto;
+    height: 436px;
+    input {
+        width: 275px;
+        height: 30px;
+    }
+    .wrong-tip{
+        height: 20px;
+        color: red;
+        font-size: 12px;
+        
+    }
+    .phoneBox {
+        // display: none;
+    }
+    span, a {
+        font-size: 12px;
+    }
+    .yzm{
+        input{
+            width: 150px;
+            float: left;
+        }
+        button{
+            width: 100px;
+            height: 35px;
+            color: #fff;
+            text-align: center;
+            line-height: 36px;
+            cursor: pointer;
+            background-color: #43a41b;
+            font-size: 14px;
+            float: right;
+        }
+    }
+
+
+    .check{
+        margin-top: 20px;
+        float: left;
+        input{
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .submitBtn {
+        margin-top: 20px;
+        float: left;
+
+        input{
+        
+        width: 285px;
+        height: 36px;
+        color: #fff;
+        text-align: center;
+        line-height: 36px;
+        cursor: pointer;
+        background-color: #43a41b;
+        font-size: 18px;
+        }
+    }
+}

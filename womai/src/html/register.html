@@ -5,100 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/register.css">
+    <script type="text/javascript" defer async="true" src="../script/lib/require.js" data-main="../script/js/main.js"></script>
     <title>注册</title>
 </head>
 <body>
 
-    <div class="header wrapRL">
-        <div class="logo">
+    <div class="header wrapRL clearfix">
+        <div class="logo fl">
             <img src="https://passport.womai.com/upload/2018/4/25/20180425101820283.png" alt="">
         </div>
-        <div class="header_r">
-
+        <span>欢迎注册</span>
+        
+        <div class="header_r fr">
+            <i>已有我买网账户？</i>
+            <a href="../html/login.html">请登录</a>
         </div>
     </div>
     <div class="main wrapRL">
         <div class="bg0">
             <div class="bg_r">
-                
+                <div class="res_inside">
+                    <form action="../../php/register.php" method="post" id="register_form">
+
+                        <div>
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="email"></label>
+                            <input type="text" name="email" id="email" placeholder="邮箱" required>
+                        </div>
+                        <div>
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="username"></label>
+                            <input type="text" name="username" id="username" placeholder="用户名" required>
+                        </div>
+                        <div>
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" placeholder="设置密码" required>
+                        </div>
+                        <div class="clearfix">
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="repassword"></label>
+                            <input type="password" name="repassword" id="repassword" placeholder="确认密码" required>
+                        </div>
+                        <div class="phoneBox clearfix">
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="phonenumber"></label>
+                            <input type="text" name="phonenumber" id="phonenumber" placeholder="填写手机号" required>
+                        </div>
+                        <div class="yzm clear">
+                            <div class="wrong-tip"><i></i></div>
+                            <label for="verifycode"></label>
+                            <input type="text" name="verifycode" placeholder="手机验证码" required>
+                            <button>发送验证码</button>
+                        </div>
+                        <div class="check">
+                            <label for="agreement">
+                                <input type="checkbox" name="agreement" id="agreement" checked required>
+                                <span id="agreement">我已阅读并同意</span> 
+                                <a href="javascript:;">《我买网网上商城服务条款》</a>
+                            </label>
+                        </div>
+                        <div class="submitBtn">
+                            <input type="submit" value="立即注册" name="submit">
+                        </div>
+                    </form> 
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- <form action="/php/register.php" method="post" class="register_form">
-        <fieldset>
-            <legend>注册</legend>
-            <div>
-                <p class="wrong-tip"><i></i></p>
-                <label for="">
-                    <input type="text" name="email" placeholder="邮箱/手机">
-                </label>
-            </div>
-            <div>
-                <p class="wrong-tip"><i></i></p>
-                <input type="text" name="username" placeholder="用户名">
-            </div>
-            <div>
-                <p class="wrong-tip"><i></i></p>
-                <input type="password" name="password"   placeholder="设置密码">
-            </div>
-            <div>
-                <p class="wrong-tip"><i></i></p>
-                <input type="password" name="repassword" placeholder="确认密码">
-            </div>
-            <div class="phoneBox">
-                <p class="wrong-tip"><i></i></p>
-                <input type="text" name="phonenumber" placeholder="填写手机号">
-            </div>
-            <div>
-                <p class="wrong-tip"><i></i></p>
-                <input type="text" name="verifycode" placeholder="手机验证码">
-            </div>
-            <div>
-                <label for="ss">
-                    <input type="checkbox" name="agreement" id="ss">
-                    <span id="ss">我已阅读并同意</span> 
-                    <a href="javascript:;">《我买网网上商城服务条款》</a>
-                </label>
-            </div>
-            <div>
-                <input type="submit" value="立即注册" name="submit">
-            </div>
-        </fieldset>    
-    </form> -->
-    <!-- <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.validate.js"></script>
-    <script src="../js/messages_zh.js"></script>
-    <script>
-        var $inputList = $('input');
-        var $wrongBox = $('.wrong-tip');
-        var $wrongTips = $('i');
-        var $phoneBox = $('.phoneBox');
-
-        $('.register_form').validate({
-            errorPlacement: function(error, element){
-                error.appendTo(element.parent().find("i"));
-                element.prev('p').show();
-            },
-            rules:{
-                username:'required',
-                password:'required',
-                repassword: 'required',
-                phonenumber: 'required',
-                agreement: 'required'
-            },
-            messages: {
-                username: '用户名不能为空',
-                password: '密码不能为空',
-                repassword: '确认密码不能为空',
-                phonenumber: '手机号码不能为空'
-            }
-        });
-        //增加自定义校验方法 $.validator.addMethod.addMethod('方法名',方法函数,'错误message回调');
-        $.validator.addMethod('mobile',function(){
-
-        },'请输入正确的手机号码');
-
-    </script> -->
 </body>
 </html>

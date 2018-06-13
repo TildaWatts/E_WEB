@@ -10,6 +10,7 @@ require.config({
 	baseUrl:'../script/lib/',//基本路径,每一模块都要添加路径
 	paths:{//不允许添加扩展名
 		'jquery':'jquery.min',
+		'jqvali':'jquery.validate',
 		'jqcookie':'http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie'
 	}
 });
@@ -24,4 +25,8 @@ require.config({
 /*require(['js/module1.js']);
 require(['js/module2.js']);
 require(['js/module3.js']);*/
-require(['../script/js/index.js','../script/js/effect.js']);//异步加载
+require([
+	'../script/js/index.js',
+	'../script/js/effect.js',
+	'../script/js/register.js'
+]);//异步加载

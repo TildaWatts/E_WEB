@@ -11,7 +11,7 @@
     }
 
     //账户密码匹配
-    $sql = "select * from userinfo where username = '$username' and password = '$password'";
+    $sql = "select * from userinfo where (username = '$username' or phoneNumber = '$phoneNumber' or email = '$email' ) and password = '$password'";
     $result = $conn->query($sql);
     if ($result->fetch-assoc()) {
         echo true;
