@@ -27,9 +27,9 @@ require.config({
 require(['js/module2.js']);
 require(['js/module3.js']);*/
 require([
-	'../script/js/index.js',
-	'../script/js/effect.js',
-	'../script/js/register.js',
-	'../script/js/login.js',
-	',,/script/js/details.js'
+	'../script/js/index.js'
+	,'../script/js/effect.js'
+	,'../script/js/register.js'
+	,'../script/js/login.js'
+	,'../script/js/details.js'
 ]);//异步加载
