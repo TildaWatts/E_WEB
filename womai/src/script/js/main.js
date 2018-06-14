@@ -11,7 +11,8 @@ require.config({
 	paths:{//不允许添加扩展名
 		'jquery':'jquery.min',
 		'jqvali':'jquery.validate',
-		'jqcookie':'http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie'
+		'jqcookie':'http://apps.bdimg.com/libs/js-cookie/2.04/js.cookie'
+		
 	}
 });
 
@@ -29,5 +30,6 @@ require([
 	'../script/js/index.js',
 	'../script/js/effect.js',
 	'../script/js/register.js',
-	'../script/js/login.js'
+	'../script/js/login.js',
+	',,/script/js/details.js'
 ]);//异步加载

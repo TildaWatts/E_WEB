@@ -457,8 +457,7 @@ a:hover {
 
 .main_pshow {
   width: 970;
-  height: 571px;
-  background: skyblue; }
+  height: 571px; }
 
 #spic {
   width: 400px;
@@ -480,11 +479,11 @@ a:hover {
 
 #bf {
   width: 400px;
-  height: 500px;
+  height: 400px;
   float: left;
   overflow: hidden;
-  position: relative;
-  left: 10px;
+  position: absolute;
+  left: 410px;
   visibility: hidden; }
 
 #bf img {
@@ -537,3 +536,21 @@ a:hover {
 #ulist #list ul li img {
   width: 100%;
   height: 100%; }
+
+.p_show_r {
+  width: 540px;
+  height: 279px;
+  background: pink;
+  margin-left: 430px; }
+
+.p_show_r .d_title i {
+  display: inline-block;
+  padding: 0px 3px;
+  margin: 2px 4px 2px 0px;
+  color: #fff;
+  background-color: #c20312;
+  border-radius: 2px;
+  line-height: 18px;
+  width: 30px;
+  height: 18px;
+  font-size: 12px; }
