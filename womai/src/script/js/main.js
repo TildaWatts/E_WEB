@@ -28,5 +28,6 @@ require(['js/module3.js']);*/
 require([
 	'../script/js/index.js',
 	'../script/js/effect.js',
-	'../script/js/register.js'
+	'../script/js/register.js',
+	'../script/js/login.js'
 ]);//异步加载
