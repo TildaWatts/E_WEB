@@ -18,10 +18,18 @@ define(['jquery','jqvali'],function($){
             return this.optional(element) || (length == 11 && mobile.test(value));
         }, "请正确填写您的手机号码");
 
+        // $.validator.setDefaults({
+        //     success:function(label){
+        //         label.text('ok').cssText()
+        //     }
+        // });
+
+
         $('#register_form').validate({
-            
+            //测试调试，阻止跳转，只验证不提交表单
+            debug:true,
             rules:{
-                email:{
+                email:{//name的值
                     required:true,
                     email:true,
                     remote: {

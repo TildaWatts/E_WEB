@@ -83,12 +83,14 @@ $navH:48px;
     }
     .allnav{
         position: absolute;
-        width: 788px;
-        height: 450px;
+        width: 787px;
+        height: 449px;
         left: 206px;
         top: 50px;
         background: white;
         display: none;
+        border-right: 1px solid #098A00;
+        border-bottom: 1px solid #098A00;
     }
     li:hover .allnav{
         display: block;

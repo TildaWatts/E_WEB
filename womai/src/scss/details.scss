@@ -1,0 +1,138 @@
+@charset "utf-8";
+@import "global";///引入全局样式
+@import "common";///引入公共样式
+@import "navigation";//引入导航样式
+@import "header";//引入局部文件
+@import "mainnav";//引入主界面导航样式
+@import "elevator";//引入内容框架
+// @import "footer";//引入局部文件
+// @import "nav";//引入局部文件
+// @import "effect";//引入局部文件
+
+.allkinds {
+    height: 48px;
+    // transition: height 2s;
+    ul{
+        display: none;
+    }
+}
+
+.allkinds:hover{
+    height:480px;
+    // transition: height 2s;
+
+    ul{
+        display: block;
+    }
+}
+
+.ppath {
+    height: 34px;
+    line-height: 34px;
+    color:#606060;
+    background: white;
+    font-size: 12px;
+    a{
+        padding: 0 5px
+    }
+}
+.p_show_l {
+    position: relative;
+}
+.main_pshow {
+    width: 970;
+    height: 571px;
+    background: skyblue;
+}
+#spic {
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+#spic img {
+    width: 400px;
+    height: 400px;
+}
+
+#sf {
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+}
+
+#bf {
+    width: 400px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    left: 10px;
+    visibility: hidden;
+}
+
+#bf img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#ulist {
+    position: absolute;
+    left: 0px;
+    top: 410px;
+    bottom: 15px;
+    width: 402px;
+    height: 56px;
+    // overflow: hidden; 
+}
+
+#ulist a {
+    float: left;
+    width: 10px;
+    height: 54px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    background: #fff;
+}
+
+#ulist #list {
+    float: left;
+    // margin-left: 18px;
+    width: 400px;
+    position: relative;
+}
+
+#ulist #list ul {
+    list-style: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#ulist #list ul li {
+    float: left;
+    width: 59px;
+    height: 59px;
+    margin-right: 25px;
+}
+#ulist #list ul li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+#ulist #list ul li:nth-of-type(1) {
+    border:1px solid #098A00;
+    width: 59px;
+    height: 59px;
+}
+
+#ulist #list ul li img {
+    width: 100%;
+    height: 100%;
+}

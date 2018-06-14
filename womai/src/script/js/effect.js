@@ -131,21 +131,81 @@ define(['jquery'],function($){
             });
         });
 
-        $dianti.on('click',function () {
-            $(this).addClass('active').siblings('#loutinav ul li').removeClass('active');
-            var $top = $floor.eq($(this).index()).offset().top;
+            $dianti.on('click',function () {
+                $(this).addClass('active').siblings('#loutinav ul li').removeClass('active');
+                var $top = $floor.eq($(this).index()).offset().top;
 
-            $('html,body').animate({
-                scrollTop:$top
+                $('html,body').animate({
+                    scrollTop:$top
+                });
             });
-        });
 
-        $goback.on('click',function () {
-            $('html,body').animate({
-                scrollTop:0
+            $goback.on('click',function () {
+                $('html,body').animate({
+                    scrollTop:0
+                });
             });
-        });
-            })()
+        })(),
 //-----------
+        scale:(function(){
+            var $wrap = $('.main_pshow');
+            var $spic = $('#spic');
+            var $sf = $('#sf');
+            var $bpic = $('#bpic');
+            var $bf = $('#bf');
+            var $picul = $('#list ul');
+            var $picli = $('#list ul li');
+
+            $spic.hover(function(){
+                $bf.css('visibility','visible');
+                $sf.css('visibility','visible');
+                $sf.css({
+                    width:$spic.width()*$bf.width()/$bpic.width(),
+                    height:$spic.height()*$bf.height()/$bpic.height()
+                });
+                var $scale = $bf.width()/$sf.width();
+
+                $(this).on('mousemove',function (ev) {
+                    var $left = ev.pageX - $wrap.offset().left - $sf.width()/2;
+                    var $top = ev.pageY - $wrap.offset().top - $sf.height()/2;
+            
+                    if($left < 0){
+                        $left = 0;
+                    }else if ($left >= ($spic.width()-$sf.width())){
+                        $left = ($spic.width()-$sf.width());
+                    }
+                    if ($top < 0){
+                        $top = 0;
+                    }else if($top >= $spic.height()-$sf.height()){
+                        $top = $spic.height()-$sf.height();
+                    }
+                    $sf.css({
+                        left:$left,
+                        top:$top
+                    });
+                    $bpic.css({
+                        left:-$left*$scale,
+                        top:-$top*$scale
+                    });
+                });
+            },function(){
+                $bf.css('visibility','hidden');
+                $sf.css('visibility','hidden');
+            });
+
+            $picli.on('click',function(){
+                var $url = $(this).find('img').attr('src');
+                $spic.find('img').attr('src',$url);//attr可读可写，第二个参数为写入的值
+                $bpic.attr('src',$url);
+            });
+
+            var $liWidthLength = $picli.size();
+            var $liWidth = $picli.eq(0).outerWidth();
+
+            // $picul.css({
+            //     width:$liWidthLength*$liWidth
+            // });
+        })()
+    //------------------,
     }
 });
