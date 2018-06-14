@@ -197,6 +197,8 @@ define(['jquery'],function($){
                 var $url = $(this).find('img').attr('src');
                 $spic.find('img').attr('src',$url);//attr可读可写，第二个参数为写入的值
                 $bpic.attr('src',$url);
+                $(this).addClass('active').siblings('#list ul li').removeClass('active');
+
             });
 
             var $liWidthLength = $picli.size();
