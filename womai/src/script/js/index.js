@@ -23,7 +23,7 @@ define(['jquery'],function($){
 
 			//商品列表1
 			$.each(indexData.proList1,function(index,val){
-				$plist1Ul.append('<li><a href="../html/details.html?pcode='+val.pcode+'"><img src="'+val.purl +'" alt=""></a><a href="">'+val.pname+'</a><span>'+val.pinfo+'</span><i>'+val.pprice+'</i><a href="">去看看</a></li>');
+				$plist1Ul.append('<li><a href="../html/details.html?pcode='+val.pcode+'"><img src="'+val.purl +'" alt=""></a><a href="../html/details.html?pcode='+val.pcode+'">'+val.pname+'</a><span>'+val.pinfo+'</span><i>'+val.pprice+'</i><a href="../html/details.html?pcode='+val.pcode+'">去看看</a></li>');
 			});
 
 			//商品列表2

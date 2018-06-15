@@ -21,6 +21,7 @@ define(['jquery'],function($){
     }).done(function(data){
         //标题
         $pagetitle.html(data.proData.pname);
+        $c_title.html(data.proData.pname);
         //内容
         $c_price.html(data.proData.pprice);
         //图片
