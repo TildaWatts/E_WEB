@@ -160,11 +160,10 @@ define(['jquery'],function($){
                 $bf.css('visibility','visible');
                 $sf.css('visibility','visible');
                 $sf.css({
-                    width:$spic.width()*$bf.width()/$bpic.width(),
-                    height:$spic.height()*$bf.height()/$bpic.height()
+                    width:$spic.width()*$bf.width()/$('#bpic').width(),
+                    height:$spic.height()*$bf.height()/$('#bpic').height()
                 });
                 var $scale = $bf.width()/$sf.width();
-
                 $(this).on('mousemove',function (ev) {
                     var $left = ev.pageX - $wrap.offset().left - $sf.width()/2;
                     var $top = ev.pageY - $wrap.offset().top - $sf.height()/2;
@@ -183,7 +182,7 @@ define(['jquery'],function($){
                         left:$left,
                         top:$top
                     });
-                    $bpic.css({
+                    $('#bpic').css({
                         left:-$left*$scale,
                         top:-$top*$scale
                     });
@@ -192,11 +191,10 @@ define(['jquery'],function($){
                 $bf.css('visibility','hidden');
                 $sf.css('visibility','hidden');
             });
-
-            $picli.on('click',function(){
+            $('#list ul').on('click','li',function(){
                 var $url = $(this).find('img').attr('src');
-                $spic.find('img').attr('src',$url);//attr可读可写，第二个参数为写入的值
-                $bpic.attr('src',$url);
+                $('#spic').find('img').attr('src',$url);//attr可读可写，第二个参数为写入的值
+                $('#bpic').attr('src',$url);
                 $(this).addClass('active').siblings('#list ul li').removeClass('active');
 
             });
