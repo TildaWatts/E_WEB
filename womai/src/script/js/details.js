@@ -5,18 +5,21 @@ define(['jquery'],function($){
     var $param = $url.split('=')[0];
     var $val = $url.split('=')[1];
     
+    var $pagetitle = $('head title');
+
 
     $.ajax({
-        url: "../../php/product.php",
-        dataType:'json',//加这句可以json转对象
+        url: "../../php/details.php",
+        dataType:'json',
         data:{
-            $param:$val
+            pcode:$val
         }
-    }).done(function(){
+    }).done(function(data){
+        //标题
+        $pagetitle.html(data.proData.pname);
+
 
     }).fail(function () {
-
+        console.log("error");
     });
-
-    console.log('deatil js connect'+$url);
   });
